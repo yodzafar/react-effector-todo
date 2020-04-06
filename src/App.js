@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes } from './routes'
+import styled from 'styled-components'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { api } from './api'
 
-function App() {
+const Container = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+`;
+
+
+const AppWrapper = styled.div`
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <AppWrapper>
+        <Container>
+          <Routes />
+        </Container>
+      </AppWrapper >
+    </Router >
+  )
 }
 
 export default App;
