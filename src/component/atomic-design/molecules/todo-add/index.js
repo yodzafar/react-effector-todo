@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { addTodo } from '../../../../effector/todo'
 import styled from 'styled-components'
-import { Button } from '../../atom/Button'
+
 import { Input } from '../../atom/Input'
+import { Button } from '../../atom/Button'
+import { addTodo } from '../../../../effector/todo'
 
 const AddWrapper = styled.div`
     border-bottom: 1px solid rgba(0,0,0,.1);

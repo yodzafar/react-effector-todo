@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes } from './routes'
 import styled from 'styled-components'
 import { BrowserRouter as Router } from 'react-router-dom'
-import { api } from './api'
 
 const Container = styled.div`
   width: 100%;
@@ -12,7 +11,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
-
 
 const AppWrapper = styled.div`
   display:flex;

@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import { useStore } from 'effector-react'
 import { todos } from '../../../../effector/todo'
 
-import { TodoListItem } from '../../molecules/todo-list-item'
 import { TodoFilter } from '../todo-filter'
+import { TodoListItem } from '../../molecules/todo-list-item'
 
 const List = styled.ul`
     list-style: none;
